@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https:/FelixShare.github.io"></form>
@@ -86,7 +86,7 @@
         <h1 id="sop"><a href="#sop" class="headerlink" title="sop"></a><strong><center><u>sop</u></center></strong></h1><h1 id="How-to-Program-Image-into-eMMC-or-SD-card"><a href="#How-to-Program-Image-into-eMMC-or-SD-card" class="headerlink" title="How to Program Image into eMMC or SD card"></a><em><center><u>How to Program Image into eMMC or SD card</u></center></em></h1><pre><code>1.MFGTOOL................................................................2  
    1.1選擇 SDK 卡 或 eMMC................................................2  
    1.2步驟...............................................................3  
-</code></pre><h4 id="1-MFGTOOL"><a href="#1-MFGTOOL" class="headerlink" title="1.MFGTOOL"></a>1.MFGTOOL</h4><h4 id="1-1選擇-SDK-卡-或eMMC"><a href="#1-1選擇-SDK-卡-或eMMC" class="headerlink" title="1.1選擇 SDK 卡 或eMMC"></a>1.1選擇 SDK 卡 或eMMC</h4><p><img src="./pic11.png" alt="pic11">   </p>
+</code></pre><h4 id="1-MFGTOOL"><a href="#1-MFGTOOL" class="headerlink" title="1.MFGTOOL"></a>1.MFGTOOL</h4><h4 id="1-1選擇-SDK-卡-或eMMC"><a href="#1-1選擇-SDK-卡-或eMMC" class="headerlink" title="1.1選擇 SDK 卡 或eMMC"></a>1.1選擇 SDK 卡 或eMMC</h4><p><img src="./images/pic11.png" alt="pic11">   </p>
 <p>SD卡  </p>
 <table>
 <thead>
@@ -154,15 +154,15 @@
 </tbody>
 </table>
 <h4 id="1-2步驟"><a href="#1-2步驟" class="headerlink" title="1.2步驟"></a>1.2步驟</h4><p>將下列要燒錄的檔案放到 \mfg\Profiles\mx6dl\OS Firmware下相對應的資料夾,如Android 5.0.2 放到androidl5內,<br>或Yocto 1.6.2放到yocto162內<br>Boot-env<br>imx6dl-embux-icm2010.dtb<br>imx6dl-embux-icm2011.dtb<br>imx6dl-embux-icm3011.dtb<br>imx6dl-embux-wcp2410.dtb<br>ramdisk.img<br>ramdisk-recovery.img<br>system.img<br>u-boot.imx<br>u-boot-2011dl.imx<br>u-boot-2410dl.imx<br>u-boot-3011dl.imx<br>u-boot-3011dl_2g.imx<br>u-boot-imx6dl.imx<br>u-boot-imx6q.imx<br>uImage<br>uramdisk.img<br>uramdisk-recovery.img<br>用文書編輯軟體如Notepad++開啟 \mfg\Profiles\mx6dl\OS Firmware(OS+版本)\boot-env<br>確認device tree 是否與板子相對應,如有修改請儲存  </p>
-<p><img src="./pic12.png" alt="pic12">   </p>
+<p><img src="./images/pic12.png" alt="pic12">   </p>
 <p>回到 \mfg\Profiles\mx6dl\OS Firmware下,將ucl2.xml刪除,如果無上此檔案請忽略此步驟<br>複製相對應板子及OS的xml,再貼在同一資料夾,會得到一ucl2_ebxdl-icmXXXX-XXXX - 複製.xml的檔案,<br>再將此檔重新命名為ucl2.xml 用Notepad++開啟ucl2.xml  </p>
-<p><img src="./pic13.png" alt="pic13">     </p>
+<p><img src="./images/pic13.png" alt="pic13">     </p>
 <p>將紅框中””內的文字複製下來,用Notepad++ 開啟\mfg\下的cfg.ini  </p>
-<p><img src="./pic14.png" alt="pic14">   </p>
+<p><img src="./images/pic14.png" alt="pic14">   </p>
 <p>將紅框中的文字改成ucl2.xml中複製下來的文字並儲存接上Micro USB (注意:板上的Micro USB接頭容易脫落,請小心插拔)<br>執行\mfg\下的MfgTool2.exe,按下Start開始燒錄  </p>
-<p><img src="./pic15.png" alt="pic15">   </p>
+<p><img src="./images/pic15.png" alt="pic15">   </p>
 <p>燒錄完成  </p>
-<p><img src="./pic16.png" alt="pic16"></p>
+<p><img src="./images/pic16.png" alt="pic16"></p>
 <p>//sample</p>
 <p>//<br><br>//  </p>
 <p>如果要關閉Mfg Tool請先Stop再Exit  </p>
@@ -203,7 +203,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https:/FelixShare.github.io/2016/11/24/sop2/" data-id="civw17hjb0002xws2rm1f3rk6" class="article-share-link">Delen</a>
+      <a data-url="https:/FelixShare.github.io/2016/11/24/sop2/" data-id="civw2r35r0002cos2vdcb11b1" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -238,7 +238,7 @@
         <h1 id="sop"><a href="#sop" class="headerlink" title="sop"></a><strong><center><u>sop</u></center></strong></h1><h1 id="How-to-Program-Image-into-eMMC-or-SD-card"><a href="#How-to-Program-Image-into-eMMC-or-SD-card" class="headerlink" title="How to Program Image into eMMC or SD card"></a><em><center><u>How to Program Image into eMMC or SD card</u></center></em></h1><pre><code>1.MFGTOOL................................................................2  
    1.1選擇 SDK 卡 或 eMMC................................................2  
    1.2步驟...............................................................3  
-</code></pre><h4 id="1-MFGTOOL"><a href="#1-MFGTOOL" class="headerlink" title="1.MFGTOOL"></a>1.MFGTOOL</h4><h4 id="1-1選擇-SDK-卡-或eMMC"><a href="#1-1選擇-SDK-卡-或eMMC" class="headerlink" title="1.1選擇 SDK 卡 或eMMC"></a>1.1選擇 SDK 卡 或eMMC</h4><p><img src="./pic01.png" alt="pic01">  </p>
+</code></pre><h4 id="1-MFGTOOL"><a href="#1-MFGTOOL" class="headerlink" title="1.MFGTOOL"></a>1.MFGTOOL</h4><h4 id="1-1選擇-SDK-卡-或eMMC"><a href="#1-1選擇-SDK-卡-或eMMC" class="headerlink" title="1.1選擇 SDK 卡 或eMMC"></a>1.1選擇 SDK 卡 或eMMC</h4><p><img src="./images/pic01.png" alt="pic01">  </p>
 <p>SD卡  </p>
 <table>
 <thead>
@@ -305,9 +305,9 @@
 </tr>
 </tbody>
 </table>
-<h4 id="1-2步驟"><a href="#1-2步驟" class="headerlink" title="1.2步驟"></a>1.2步驟</h4><p>將下列要燒錄的檔案放到 \mfg\Profiles\mx6dl\OS Firmware下相對應的資料夾,如Android 5.0.2 放到androidl5內,<br>或Yocto 1.6.2放到yocto162內<br>Boot-env<br>imx6dl-embux-icm2010.dtb<br>imx6dl-embux-icm2011.dtb<br>imx6dl-embux-icm3011.dtb<br>imx6dl-embux-wcp2410.dtb<br>ramdisk.img<br>ramdisk-recovery.img<br>system.img<br>u-boot.imx<br>u-boot-2011dl.imx<br>u-boot-2410dl.imx<br>u-boot-3011dl.imx<br>u-boot-3011dl_2g.imx<br>u-boot-imx6dl.imx<br>u-boot-imx6q.imx<br>uImage<br>uramdisk.img<br>uramdisk-recovery.img<br>用文書編輯軟體如Notepad++開啟 \mfg\Profiles\mx6dl\OS Firmware(OS+版本)\boot-env<br>確認device tree 是否與板子相對應,如有修改請儲存<br><img src="./pic02.png" alt="pic02"><br>回到 \mfg\Profiles\mx6dl\OS Firmware下,將ucl2.xml刪除,如果無上此檔案請忽略此步驟<br>複製相對應板子及OS的xml,再貼在同一資料夾,會得到一ucl2_ebxdl-icmXXXX-XXXX - 複製.xml的檔案,<br>再將此檔重新命名為ucl2.xml 用Notepad++開啟ucl2.xml<br><img src="./pic03.png" alt="pic03"><br>將紅框中””內的文字複製下來,用Notepad++ 開啟\mfg\下的cfg.ini<br><img src="./pic04.png" alt="pic04">  </p>
-<p>將紅框中的文字改成ucl2.xml中複製下來的文字並儲存接上Micro USB (注意:板上的Micro USB接頭容易脫落,請小心插拔)<br>執行\mfg\下的MfgTool2.exe,按下Start開始燒錄<br><img src="./pic05.png" alt="pic05"><br>燒錄完成  </p>
-<p><img src="./pic06.png" alt="pic06">  </p>
+<h4 id="1-2步驟"><a href="#1-2步驟" class="headerlink" title="1.2步驟"></a>1.2步驟</h4><p>將下列要燒錄的檔案放到 \mfg\Profiles\mx6dl\OS Firmware下相對應的資料夾,如Android 5.0.2 放到androidl5內,<br>或Yocto 1.6.2放到yocto162內<br>Boot-env<br>imx6dl-embux-icm2010.dtb<br>imx6dl-embux-icm2011.dtb<br>imx6dl-embux-icm3011.dtb<br>imx6dl-embux-wcp2410.dtb<br>ramdisk.img<br>ramdisk-recovery.img<br>system.img<br>u-boot.imx<br>u-boot-2011dl.imx<br>u-boot-2410dl.imx<br>u-boot-3011dl.imx<br>u-boot-3011dl_2g.imx<br>u-boot-imx6dl.imx<br>u-boot-imx6q.imx<br>uImage<br>uramdisk.img<br>uramdisk-recovery.img<br>用文書編輯軟體如Notepad++開啟 \mfg\Profiles\mx6dl\OS Firmware(OS+版本)\boot-env<br>確認device tree 是否與板子相對應,如有修改請儲存<br><img src="./images/pic02.png" alt="pic02"><br>回到 \mfg\Profiles\mx6dl\OS Firmware下,將ucl2.xml刪除,如果無上此檔案請忽略此步驟<br>複製相對應板子及OS的xml,再貼在同一資料夾,會得到一ucl2_ebxdl-icmXXXX-XXXX - 複製.xml的檔案,<br>再將此檔重新命名為ucl2.xml 用Notepad++開啟ucl2.xml<br><img src="./images/pic03.png" alt="pic03"><br>將紅框中””內的文字複製下來,用Notepad++ 開啟\mfg\下的cfg.ini<br><img src="./images/pic04.png" alt="pic04">  </p>
+<p>將紅框中的文字改成ucl2.xml中複製下來的文字並儲存接上Micro USB (注意:板上的Micro USB接頭容易脫落,請小心插拔)<br>執行\mfg\下的MfgTool2.exe,按下Start開始燒錄<br><img src="./images/pic05.png" alt="pic05"><br>燒錄完成  </p>
+<p><img src="./images/pic06.png" alt="pic06">  </p>
 <p>如果要關閉Mfg Tool請先Stop再Exit  </p>
 <p>燒錄完畢請調整switch開關成工作模式  </p>
 <table>
@@ -346,7 +346,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https:/FelixShare.github.io/2016/11/24/sop1/" data-id="civw17hir0001xws28aozl4pz" class="article-share-link">Delen</a>
+      <a data-url="https:/FelixShare.github.io/2016/11/24/sop1/" data-id="civw2r35r0001cos2pd2uoyxp" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -391,7 +391,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https:/FelixShare.github.io/2016/11/24/hello-world/" data-id="civw17hih0000xws2ozcm2d4t" class="article-share-link">Delen</a>
+      <a data-url="https:/FelixShare.github.io/2016/11/24/hello-world/" data-id="civw2r35h0000cos205z98kc9" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -416,7 +416,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archieven</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li></ul>
     </div>
@@ -426,7 +426,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recente berichten</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -455,7 +455,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 FelixShare<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
