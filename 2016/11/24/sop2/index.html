@@ -15,19 +15,12 @@
 <meta property="og:description" content="sopHow to Program Image into eMMC or SD card1.MFGTOOL................................................................2  
    1.1選擇 SDK 卡 或 eMMC................................................2  
    1.2">
-<meta property="og:image" content="https:/FelixShare.github.io/./images/pic11.png">
-<meta property="og:image" content="https:/FelixShare.github.io/./images/pic12.png">
-<meta property="og:image" content="https:/FelixShare.github.io/./images/pic13.png">
-<meta property="og:image" content="https:/FelixShare.github.io/./images/pic14.png">
-<meta property="og:image" content="https:/FelixShare.github.io/./images/pic15.png">
-<meta property="og:image" content="https:/FelixShare.github.io/./images/pic16.png">
-<meta property="og:updated_time" content="2016-11-24T08:04:48.714Z">
+<meta property="og:updated_time" content="2016-11-24T08:54:40.843Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sop2">
 <meta name="twitter:description" content="sopHow to Program Image into eMMC or SD card1.MFGTOOL................................................................2  
    1.1選擇 SDK 卡 或 eMMC................................................2  
    1.2">
-<meta name="twitter:image" content="https:/FelixShare.github.io/./images/pic11.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -65,9 +58,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https:/FelixShare.github.io"></form>
@@ -101,7 +94,7 @@
         <h1 id="sop"><a href="#sop" class="headerlink" title="sop"></a><strong><center><u>sop</u></center></strong></h1><h1 id="How-to-Program-Image-into-eMMC-or-SD-card"><a href="#How-to-Program-Image-into-eMMC-or-SD-card" class="headerlink" title="How to Program Image into eMMC or SD card"></a><em><center><u>How to Program Image into eMMC or SD card</u></center></em></h1><pre><code>1.MFGTOOL................................................................2  
    1.1選擇 SDK 卡 或 eMMC................................................2  
    1.2步驟...............................................................3  
-</code></pre><h4 id="1-MFGTOOL"><a href="#1-MFGTOOL" class="headerlink" title="1.MFGTOOL"></a>1.MFGTOOL</h4><h4 id="1-1選擇-SDK-卡-或eMMC"><a href="#1-1選擇-SDK-卡-或eMMC" class="headerlink" title="1.1選擇 SDK 卡 或eMMC"></a>1.1選擇 SDK 卡 或eMMC</h4><p><img src="./images/pic11.png" alt="pic11">   </p>
+</code></pre><h4 id="1-MFGTOOL"><a href="#1-MFGTOOL" class="headerlink" title="1.MFGTOOL"></a>1.MFGTOOL</h4><h4 id="1-1選擇-SDK-卡-或eMMC"><a href="#1-1選擇-SDK-卡-或eMMC" class="headerlink" title="1.1選擇 SDK 卡 或eMMC"></a>1.1選擇 SDK 卡 或eMMC</h4>  
 <p>SD卡  </p>
 <table>
 <thead>
@@ -169,15 +162,15 @@
 </tbody>
 </table>
 <h4 id="1-2步驟"><a href="#1-2步驟" class="headerlink" title="1.2步驟"></a>1.2步驟</h4><p>將下列要燒錄的檔案放到 \mfg\Profiles\mx6dl\OS Firmware下相對應的資料夾,如Android 5.0.2 放到androidl5內,<br>或Yocto 1.6.2放到yocto162內<br>Boot-env<br>imx6dl-embux-icm2010.dtb<br>imx6dl-embux-icm2011.dtb<br>imx6dl-embux-icm3011.dtb<br>imx6dl-embux-wcp2410.dtb<br>ramdisk.img<br>ramdisk-recovery.img<br>system.img<br>u-boot.imx<br>u-boot-2011dl.imx<br>u-boot-2410dl.imx<br>u-boot-3011dl.imx<br>u-boot-3011dl_2g.imx<br>u-boot-imx6dl.imx<br>u-boot-imx6q.imx<br>uImage<br>uramdisk.img<br>uramdisk-recovery.img<br>用文書編輯軟體如Notepad++開啟 \mfg\Profiles\mx6dl\OS Firmware(OS+版本)\boot-env<br>確認device tree 是否與板子相對應,如有修改請儲存  </p>
-<p><img src="./images/pic12.png" alt="pic12">   </p>
+  
 <p>回到 \mfg\Profiles\mx6dl\OS Firmware下,將ucl2.xml刪除,如果無上此檔案請忽略此步驟<br>複製相對應板子及OS的xml,再貼在同一資料夾,會得到一ucl2_ebxdl-icmXXXX-XXXX - 複製.xml的檔案,<br>再將此檔重新命名為ucl2.xml 用Notepad++開啟ucl2.xml  </p>
-<p><img src="./images/pic13.png" alt="pic13">     </p>
+     
 <p>將紅框中””內的文字複製下來,用Notepad++ 開啟\mfg\下的cfg.ini  </p>
-<p><img src="./images/pic14.png" alt="pic14">   </p>
+  
 <p>將紅框中的文字改成ucl2.xml中複製下來的文字並儲存接上Micro USB (注意:板上的Micro USB接頭容易脫落,請小心插拔)<br>執行\mfg\下的MfgTool2.exe,按下Start開始燒錄  </p>
-<p><img src="./images/pic15.png" alt="pic15">   </p>
+    
 <p>燒錄完成  </p>
-<p><img src="./images/pic16.png" alt="pic16"></p>
+  
 <p>//sample</p>
 <p>//<br><br>//  </p>
 <p>如果要關閉Mfg Tool請先Stop再Exit  </p>
@@ -218,7 +211,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https:/FelixShare.github.io/2016/11/24/sop2/" data-id="civw2r35r0002cos2vdcb11b1" class="article-share-link">Partager</a>
+      <a data-url="https:/FelixShare.github.io/2016/11/24/sop2/" data-id="civw4it280002xos2ig0hlhtg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -229,7 +222,7 @@
   
   
     <a href="/2016/11/24/sop1/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">sop1</div>
     </a>
   
@@ -262,7 +255,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -291,7 +284,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 FelixShare<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
